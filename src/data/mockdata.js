@@ -3,7 +3,7 @@ export const mockDataTeam = [
       id: 1,
       name: "Jon Snow",
       email: "jonsnow@gmail.com",
-      age: 35,
+      age: 30,
       phone: "(665)121-5454",
       access: "admin",
     },
@@ -11,7 +11,7 @@ export const mockDataTeam = [
       id: 2,
       name: "Cersei Lannister",
       email: "cerseilannister@gmail.com",
-      age: 42,
+      age: 39,
       phone: "(421)314-2288",
       access: "manager",
     },
@@ -19,7 +19,7 @@ export const mockDataTeam = [
       id: 3,
       name: "Jaime Lannister",
       email: "jaimelannister@gmail.com",
-      age: 45,
+      age: 35,
       phone: "(422)982-6739",
       access: "user",
     },
@@ -27,7 +27,7 @@ export const mockDataTeam = [
       id: 4,
       name: "Anya Stark",
       email: "anyastark@gmail.com",
-      age: 16,
+      age: 26,
       phone: "(921)425-6742",
       access: "admin",
     },
@@ -431,7 +431,7 @@ export const mockDataTeam = [
   export const mockLineData = [
     {
       id: "japan",
-      color: tokens("dark").greenAccent[500],
+      color: "green",
       data: [
         {
           x: "plane",
@@ -485,7 +485,7 @@ export const mockDataTeam = [
     },
     {
       id: "france",
-      color: tokens("dark").blueAccent[300],
+      color: "green",
       data: [
         {
           x: "plane",
@@ -539,7 +539,7 @@ export const mockDataTeam = [
     },
     {
       id: "us",
-      color: tokens("dark").redAccent[200],
+      color: "green",
       data: [
         {
           x: "plane",
