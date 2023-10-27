@@ -7,7 +7,8 @@ import Sidebar from './pages/global/Sidebar';
 import Dashboard from "./pages/dashboard";
 import Calendar from './pages/calender/Calender'
 import Team from "./pages/teams/Team";
-
+import Contact from "./pages/contacts/Contact";
+import Invoice from "./pages/invoices/Invoices";
 
 
 
@@ -30,9 +31,9 @@ function App() {
             <Route path="/" element={<Dashboard/>}/>
 
             <Route path="/team" element={<Team/>}/>
-            {/* <Route path="/contacts" element={<Contact/>}/>
+            <Route path="/contacts" element={<Contact/>}/>
             <Route path="/invoice" element={<Invoice/>}/>
-            <Route path="/form" element={<Form/>}/>
+            {/* <Route path="/form" element={<Form/>}/>
             <Route path="/bars" element={<Bar/>}/>
             <Route path="/pie" element={<Pie/>}/>
             <Route path="/lines" element={<Line/>}/>

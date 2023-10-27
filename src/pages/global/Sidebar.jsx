@@ -20,7 +20,7 @@ export default function Sidebar() {
 
   const theme = useTheme();
   const colors = token(theme.palette.mode);
-  console.log(colors)
+
   const toggleDrawer = (anchor, open) => (event) => {
     if (
       event.type === "keydown" &&

@@ -1,19 +1,17 @@
-import { Box, Container,Typography,useTheme } from '@mui/material'
-import { DataGrid } from '@mui/x-data-grid';
+import { Box, Container, useTheme } from '@mui/material'
+import { DataGrid, GridToolbar } from '@mui/x-data-grid';
 import Header from '../../components/Header';
-import {mockDataTeam} from '../../data/mockdata'
-import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
-import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
+import {mockDataContacts} from '../../data/mockdata'
 import { token } from '../../theme';
 
 
-export default function Team() {
+export default function Contact() {
 const theme= useTheme()
 
 const colors = token(theme.palette.mode);
   
     const columns = [
-        { field: 'id', headerName: 'ID', width: 90 },
+        { field: 'id', headerName: 'ID', width: 15 },
         {
           field: 'name',
           headerName: 'Name',
@@ -42,39 +40,38 @@ const colors = token(theme.palette.mode);
           editable: true,
         },
         {
-            field: 'access',
-            headerName: 'Access',
-            flex:1,
-            headerAlign:'center',
+            field: 'address',
+            headerName: 'Address',
+           
             editable: true,
-            renderCell:( {row:{access}} )=>{
-              return (
-
-                <Box
-                width='60%'
-                m='0 auto'
-                p='5px'
-                display='flex'
-                justifyContent='center'
-                backgroundColor={access==='admin'?'#3B7A57':'#D2B55B'}
-                borderRadius={'4px'}
-                >
-                  {access==='admin'? <AdminPanelSettingsIcon/>:<PersonOutlineIcon/>}
-                  <Typography paddingLeft={'3px'}>
-                  {access}
-                  </Typography>
-                 
-                </Box>
-              )
-
-            }
+            width:300,
           },
+          {
+            field: 'city',
+            headerName: 'City',
+            flex:1,
+            editable: true,
+          },
+          {
+            field: 'zipCode',
+            headerName: 'ZIP',
+            flex:1,
+            editable: true,
+          },
+          {
+            field: 'registrarId',
+            headerName: 'Registrar Id',
+            flex:1,
+            editable: true,
+          },
+        
       ];
+
       
   return (
 
     <Container>
-        <Header title='TEAM' subtitle='Manage Here'></Header>
+        <Header title='CONTACTS' subtitle='All of your connections'></Header>
          <Box sx={{ "& .MuiDataGrid-root":{
             border:'none'
          },
@@ -88,9 +85,13 @@ const colors = token(theme.palette.mode);
          "& .MuiDataGrid-columnHeader":{
           backgroundColor:`${colors.blue[600]}`
          },
+         "& .MuiDataGrid-toolbarContainer .MuiButton-text":{
+            color:`${colors.blue[200]}`
+           },
+           
           height:'75vh', width: '100%' }}>
       <DataGrid
-        rows={mockDataTeam}
+        rows={mockDataContacts}
         columns={columns}
         initialState={{
           pagination: {
@@ -103,6 +104,7 @@ const colors = token(theme.palette.mode);
         pageSizeOptions={[11]}
         density='standard'
         disableRowSelectionOnClick
+        slots={{toolbar:GridToolbar}}
       />
     </Box>
     </Container>

@@ -8,6 +8,7 @@ import FormatAlignLeftIcon from '@mui/icons-material/FormatAlignLeft';
 import PieChartIcon from '@mui/icons-material/PieChart';
 import SsidChartIcon from '@mui/icons-material/SsidChart';
 import TerrainOutlinedIcon from '@mui/icons-material/TerrainOutlined';
+import AddIcCallIcon from '@mui/icons-material/AddIcCall';
 
 export default [
     {
@@ -19,6 +20,11 @@ export default [
     text: "Teams",
     icon: <GroupsIcon />,
     path: "/team",
+  },
+  {
+    text: "Contacts",
+    icon: <AddIcCallIcon />,
+    path: "/contacts",
   },
   {
     text: "Calender",
