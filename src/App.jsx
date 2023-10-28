@@ -9,6 +9,7 @@ import Calendar from './pages/calender/Calender'
 import Team from "./pages/teams/Team";
 import Contact from "./pages/contacts/Contact";
 import Invoice from "./pages/invoices/Invoices";
+import Form from "./pages/form/Form";
 
 
 
@@ -33,8 +34,8 @@ function App() {
             <Route path="/team" element={<Team/>}/>
             <Route path="/contacts" element={<Contact/>}/>
             <Route path="/invoice" element={<Invoice/>}/>
-            {/* <Route path="/form" element={<Form/>}/>
-            <Route path="/bars" element={<Bar/>}/>
+            <Route path="/form" element={<Form/>}/>
+            {/* <Route path="/bars" element={<Bar/>}/>
             <Route path="/pie" element={<Pie/>}/>
             <Route path="/lines" element={<Line/>}/>
             <Route path="/faq" element={<Faq/>}/>

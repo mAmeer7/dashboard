@@ -60,7 +60,7 @@ export default function Invoices() {
 
   return (
     <Container>
-      <Header title="INVOICES" subtitle="All of your connections"></Header>
+      <Header title="INVOICES" subtitle="All of your Finance"></Header>
       <Box
         sx={{
           "& .MuiDataGrid-root": {

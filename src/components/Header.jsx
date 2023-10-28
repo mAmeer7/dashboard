@@ -1,8 +1,10 @@
+/* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/prop-types */
 import { Box , Typography} from '@mui/material'
+import { memo } from 'react'
 
 
-export default function Header(props) {
+ function Header(props) {
 
 
 const {title, subtitle}= props
@@ -19,3 +21,4 @@ const {title, subtitle}= props
     </Box>
   )
 }
+export default memo(Header)
