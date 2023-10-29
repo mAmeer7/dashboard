@@ -37,7 +37,7 @@ export default function Form() {
 
   return (
     <Container>
-      <Header title="CREATE USER" subtitle="Create New User Profile" />
+      <Header title="CREATE USER" subtitle="Create a New User Profile" />
       <Box>
         <Formik
           onSubmit={handleForm}

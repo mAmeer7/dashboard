@@ -10,7 +10,10 @@ import Team from "./pages/teams/Team";
 import Contact from "./pages/contacts/Contact";
 import Invoice from "./pages/invoices/Invoices";
 import Form from "./pages/form/Form";
-
+import Faq from "./pages/faq/FAQ";
+import Bar from "./pages/bar/Bar";
+import Pie from "./pages/pie/Pie";
+import  Geography from './pages/geography/Geography'
 
 
 function App() {
@@ -35,11 +38,10 @@ function App() {
             <Route path="/contacts" element={<Contact/>}/>
             <Route path="/invoice" element={<Invoice/>}/>
             <Route path="/form" element={<Form/>}/>
-            {/* <Route path="/bars" element={<Bar/>}/>
+            <Route path="/bars" element={<Bar/>}/>
             <Route path="/pie" element={<Pie/>}/>
-            <Route path="/lines" element={<Line/>}/>
             <Route path="/faq" element={<Faq/>}/>
-            <Route path="/geography" element={<Geography/>}/>  */}
+            <Route path="/geography" element={<Geography/>}/> 
             <Route path="/calendar" element={<Calendar/>}/>
           </Routes>
           </main>
