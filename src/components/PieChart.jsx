@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import { ResponsivePie } from '@nivo/pie';
@@ -5,7 +6,7 @@ import { mockPieData  as data} from '../data/mockdata';
 import { useTheme} from '@mui/material';
 import { token } from '../theme';
 
-export default function PieChart() {
+export default function PieChart({isDashboard=false}) {
 
     const theme= useTheme()
     const color= token(theme.palette.mode)
@@ -74,7 +75,9 @@ export default function PieChart() {
                 ]
             ]
         }}
-        legends={[
+        legends={  isDashboard? undefined:  
+            
+            [
             {
                 anchor: 'bottom',
                 direction: 'row',
